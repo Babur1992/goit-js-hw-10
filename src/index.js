@@ -21,7 +21,6 @@ fetchBreeds()
     breedSelect.innerHTML = '<option>Failed to load breeds</option>';
     breedSelect.disabled = true;
   });
-
 breedSelect.style.display = 'none';
 catInfoDiv.style.display = 'none';
 loader.style.display = 'block';
@@ -43,7 +42,6 @@ fetchBreeds()
     breedSelect.disabled = true;
     loader.style.display = 'none';
   });
-
 breedSelect.addEventListener('change', event => {
   const selectedBreedId = event.target.value;
   catInfoDiv.style.display = 'none';
